@@ -30,7 +30,7 @@ use Symfony\Component\HttpKernel\Exception\FlattenException;
  *     @ORM\Index("cmd_search_index", columns = {"command", "executeAfter"}),
  *     @ORM\Index("sorting_index", columns = {"state", "priority", "id"}),
  *     @ORM\Index("count_state_index", columns = {"state", "queue"}),
- *     @ORM\Index("removal_fetch_index", columns= {"closedAt", "originalJob_id"}),
+ *     @ORM\Index("removal_fetch_index", columns= {"executeAfter", "originalJob_id"}),
  * })
  * @ORM\ChangeTrackingPolicy("DEFERRED_EXPLICIT")
  *
